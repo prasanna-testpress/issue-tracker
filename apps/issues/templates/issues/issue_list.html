@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<h1>The Issues {{issues.title}}</h1>
+<ul>
+    {% for issue in issues%}
+
+        <li>
+            <h1>{{issue.title}}</h1>
+            <p>{{issue.status}}</p>
+            <p>{{issue.priority}}</p>
+            <p>Assigned by {{issue.created_by}}</p>
+            
+        </li>
+
+    {%endfor %}
+</ul>
+
+{% endblock %}

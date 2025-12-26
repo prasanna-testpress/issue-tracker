@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<h1>{{issue.title}}</h1>
+<p>{{issue.description}}</p>
+<p>{{issue.priority}}</p>
+<form method="post">
+    {{issue.status}}
+</form>
+
+{% endblock %}
